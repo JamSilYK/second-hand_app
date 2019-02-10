@@ -84,12 +84,8 @@ public class ChattingActivity extends AppCompatActivity {
     private DataInputStream dis; //바이너리 형태로 입력된것을 자바 기본 데이터 타입으로 읽어오는것
     private DataOutputStream dos; //바이너리 형태로 데이터 저장
 
-//    private String ip = "192.168.219.179";
-//    private String ip = "192.168.219.130";
-//    private String ip = "192.168.0.214"; //팀노바 ip주소
-//    private String ip = "192.168.56.4"; // 로커 ip
-    private String ip = "54.180.105.119"; //ec2
-//    private String ip = "192.168.219.179";
+    private String ip = "************"; //ec2
+
     private int port = 9999;
 
     private boolean check = true;

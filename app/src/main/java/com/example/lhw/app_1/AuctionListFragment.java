@@ -36,7 +36,7 @@ import static org.webrtc.ContextUtils.getApplicationContext;
 public class AuctionListFragment extends Fragment {
 
     RecyclerView recyclerView;
-    ArrayList<AuctionModel> auction_list;
+    ArrayList<AuctionModel> auction_list; //현재 방송중인 방(Room) + 유저정보
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
@@ -76,7 +76,7 @@ public class AuctionListFragment extends Fragment {
         return v;
     }
 
-    void show() {
+    void show() { //경매하기 다이얼로그 :: 이메일 입력 받기 -> 유저 정보 확인 -> 액티비티이동
         final EditText edittext = new EditText(getActivity());
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
         builder.setTitle("경매하기");
@@ -147,7 +147,7 @@ public class AuctionListFragment extends Fragment {
         }
 
         @Override
-        public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) {
+        public void onBindViewHolder(@NonNull RecyclerView.ViewHolder holder, final int position) { //유저정보 가지고오기
             final ViewHolder homeViewHolder = (ViewHolder)holder;
             Call<JsonObject> getUser = NetRetrofit.getInstance().getService().getUserModel(auction_list.get(position).broadcaster_email);
             getUser.enqueue(new Callback<JsonObject>() {
@@ -165,7 +165,7 @@ public class AuctionListFragment extends Fragment {
                 }
             });
 
-            homeViewHolder.item_container.setOnClickListener(new View.OnClickListener() {
+            homeViewHolder.item_container.setOnClickListener(new View.OnClickListener() { //아이템 클릭했을때 item email 확인 후  activity 이동
                 @Override
                 public void onClick(View v) {
                     Intent intent = new Intent(getActivity(), CameraActivity.class);

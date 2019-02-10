@@ -32,9 +32,9 @@ import retrofit2.Response;
 
 public class CameraActivity extends AppCompatActivity implements Session.SessionListener, PublisherKit.PublisherListener {
 
-    private static String API_KEY = "46251632";
-    private static String SESSION_ID = "1_MX40NjI1MTYzMn5-MTU0NzcwMjMyNTU3NH5PWW1SMlM0OG5HTmg0L3laTWFKeEpWdFN-fg";
-    private static String TOKEN = "T1==cGFydG5lcl9pZD00NjI1MTYzMiZzaWc9YjBhNjQ0OWEwNWIyMDk0NTMzYTljYjczZjdhNzZhNmQyMDYxMDVhNDpzZXNzaW9uX2lkPTFfTVg0ME5qSTFNVFl6TW41LU1UVTBOemN3TWpNeU5UVTNOSDVQV1cxU01sTTBPRzVIVG1nMEwzbGFUV0ZLZUVwV2RGTi1mZyZjcmVhdGVfdGltZT0xNTQ3NzAyNzEyJm5vbmNlPTAuMjE4NTMwMjQwOTYzNzA0ODgmcm9sZT1wdWJsaXNoZXImZXhwaXJlX3RpbWU9MTU1MDI5NDcwOCZpbml0aWFsX2xheW91dF9jbGFzc19saXN0PQ==";
+    private static String API_KEY = "*******";
+    private static String SESSION_ID = "****************************";
+    private static String TOKEN = "************************************";
     private static String TAG = MainActivity.class.getSimpleName();
     private static final int RC_SETTINGS = 123;
 
