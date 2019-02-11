@@ -1,6 +1,6 @@
 작품이름 : 벼룩시장
 
-작품 시연 연상 : https://www.youtube.com/watch?v=3vSy32FBUKw&t=1s
+작품 시연 상 : https://www.youtube.com/watch?v=3vSy32FBUKw&t=1s
 
 프로젝트 참여자 : 김윤규(1명)
 
