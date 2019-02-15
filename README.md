@@ -1,4 +1,4 @@
-﻿작품이름 : 벼룩시장
+﻿작품이름 : 벼룩시장(second-hand app)
 
 작품 시연 영상 : https://www.youtube.com/watch?v=3vSy32FBUKw&t=1s
 
